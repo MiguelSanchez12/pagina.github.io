@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informacion Personal</title>
+  <style>
+    body {
+      margin: 0;
+      background-image: url('https://img.freepik.com/vector-gratis/fondo-escritorio-moderno-vector-diseno-azul-geometrico_53876-135923.jpg?w=740&t=st=1693957733~exp=1693958333~hmac=2e7231f9d9af5729cce0856b3831c4cbfd7947492cd50fc34a2061061b38c728');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    header {
+      background-color: #4b0727;
+      color: #45006d;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      margin: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #5b3a5c;
+    }
+
+    th, td {
+      border: 1px solid #d81adf;
+      padding: 10px;
+      text-align: left;
+      color: white;
+    }
+
+    th {
+      background-color: #a30404;
+      color: #d742fc
+    }
+
+    a {
+      color: #1776CA;
+    }
+    .contenedor {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .contenedor table {
+      width: 100%;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .contenedor td {
+      padding: 10px;
+    }
+
+    .contenedor img {
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+    }
+    #logo-iuc {
+    max-width: 200px;
+    width: auto;
+    height: auto;
+  }
+
+    @media screen and (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .container {
+        padding: 10px;
+      }
+
+      table {
+        font-size: 14px;
+      }
+
+      th, td {
+        padding: 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Informacion Personal</h1>
+  <h2>Desarrollado por: Miguel Angel Sanchez Largo</h2>
+</header>
+<marquee>
+  <img src="data:image/jpeg;base64,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" alt="Universitaria de Colombia" id="logo-iuc" width="200" height="190">
+  <font size="24" color="black" face="Arial"> UNIVERSITARIA DE COLOMBIA</font>
+</marquee>
+
+<div class="contenedor">
+  <table>
+    <tr>
+      <td colspan="2">
+        <img src="https://img.freepik.com/vector-gratis/avatar-personaje-empresario-aislado_24877-60111.jpg?w=740&t=st=1694019656~exp=1694020256~hmac=43958cf732bd1f50c59efdf239b4bbf406ab2fea5e1bafcd49ab3d7fb611383b" alt="Tu foto">
+      </td>
+    </tr>
+    <tr>
+      <td>Estudio:</td>
+      <td>Etudiante de Ing Software</td>
+    </tr>
+    <tr>
+      <td>Edad:</td>
+      <td>18 Años</td>
+    </tr>
+  </table>
+</div>
+<div class="container">
+  <table>
+    <thead>
+    <tr>
+      <th>Nombre Actividad</th>
+      <th>Enlace de la Actividad</th>
+      <th>Desarrollo de Actividades</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Primera Actividad</td>
+      <td><a href="actividad_01.html" target="_blank">actividad_01</a></td>
+      <td><a href="rutina.html" target="_blank">Rutina Diaria</a></td>
+    </tr>
+    <tr>
+      <td>Segunda Actividad</td>
+      <td><a href="actividad_02.html" target="_blank">actividad_02</a></td>
+      <td><a href="gustos.html" target="_blank">Comida Favorita</a></td>
+    </tr>
+    <tr>
+      <td>Tercera Actividad</td>
+      <td><a href="actividad_03.html" target="_blank">actividad_03</a></td>
+      <td><a href="zona.html" target="_blank">Lugar Favorito</a></td>
+    </tr>
+    <tr>
+      <td>Cuarta Actividad</td>
+      <td><a href="actividad_04.html" target="_blank">actividad_04</a></td>
+      <td><a href="videojuego.html" target="_blank">joiofedjifdjoidf</a></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>
